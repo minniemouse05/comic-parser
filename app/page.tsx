@@ -123,7 +123,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h3 className="col-h">Things worth trying</h3>
+            <h3 className="col-h">Try these out!</h3>
             <ul className="plain" style={{ fontSize: 14 }}>
               <li>
                 Drag a bubble across a panel boundary. <code>same_frame</code>{" "}
