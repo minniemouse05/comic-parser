@@ -3,7 +3,7 @@ import { extractFeatures, boxIou } from "./features";
 import { frameAwareScores, nearestCentroidScores, nearestEdgeScores } from "./baselines";
 import { predict } from "./xgb";
 
-export interface MethodSpec {
+interface MethodSpec {
   id: MethodId;
   label: string;
   short: string;
@@ -119,7 +119,7 @@ export function attributePage(
   });
 }
 
-export type Outcome = "correct" | "wrong" | "missed";
+type Outcome = "correct" | "wrong" | "missed";
 
 /**
  * Score a page against Manga109Dialog ground truth using the paper's protocol

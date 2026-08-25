@@ -46,7 +46,7 @@ The headline finding is not the number. It is *which* decision produced it:
 
 ```
 app/                Next.js App Router pages
-components/         Demo canvas, tables, charts
+components/         Interactive demo canvas and overlay
 lib/                Feature extraction, baselines, XGBoost inference — ports of the notebook
 notebooks/          The original Colab notebooks, outputs intact
 scripts/            export_web_assets.py — regenerates the demo data and models
@@ -56,7 +56,6 @@ public/
   data/pages.json       Validation pages: detections, panels, ground-truth links
   model/models.json     The trained XGBoost models, flattened for the browser
   pages/                Page images (see licensing below)
-  figures/              Figures from the notebooks
   whos-talking-*.pdf    The write-up, also linked from the site
 ```
 
@@ -148,8 +147,7 @@ The app lives at the repository root, so there is nothing to configure.
    command are all defaults. No environment variables.
 4. Deploy.
 
-Then edit `lib/site.ts` to point `repo` at your GitHub URL, and drop the deployment URL into
-this README.
+Then drop the deployment URL into this README, above.
 
 ---
 

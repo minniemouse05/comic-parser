@@ -18,7 +18,7 @@ export const FEATURE_NAMES = [
   "h_overlap",
 ] as const;
 
-export type FeatureName = (typeof FEATURE_NAMES)[number];
+type FeatureName = (typeof FEATURE_NAMES)[number];
 
 /** Human-readable gloss for each feature, used by the inspector panel. */
 export const FEATURE_DOCS: Record<FeatureName, { label: string; blurb: string; group: string }> = {
@@ -97,7 +97,7 @@ export function boxIou(a: Box, b: Box): number {
 }
 
 /** Index of the first frame containing this box's centroid, or -1. */
-export function containingFrame(box: Box, frames: Box[]): number {
+function containingFrame(box: Box, frames: Box[]): number {
   const [cx, cy] = centroid(box);
   for (let i = 0; i < frames.length; i++) {
     const f = frames[i];
@@ -122,7 +122,7 @@ export function sameFrame(textBox: Box, bodyBox: Box, frames: Box[]): number {
  * feed the classifier a feature it has never seen and silently degrade every
  * prediction on the site.
  */
-export function hOverlapScore(a: Box, b: Box): number {
+function hOverlapScore(a: Box, b: Box): number {
   const overlap = Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
   const union = Math.max(a[3], b[3]) - Math.min(a[1], b[1]);
   return overlap / (union + 1e-8);

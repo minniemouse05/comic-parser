@@ -15,7 +15,7 @@ function sigmoid(x: number): number {
 }
 
 /** Standardise a raw feature vector, selecting the model's own columns. */
-export function standardize(model: XgbModel, rawFeatures: number[]): number[] {
+function standardize(model: XgbModel, rawFeatures: number[]): number[] {
   const out = new Array<number>(model.cols.length);
   for (let i = 0; i < model.cols.length; i++) {
     out[i] = (rawFeatures[model.cols[i]] - model.scalerMean[i]) / model.scalerScale[i];
@@ -33,7 +33,7 @@ export function standardize(model: XgbModel, rawFeatures: number[]): number[] {
  * right on the upper one. Comparing in float64 sends every same-panel pair down
  * the wrong branch of the root split.
  */
-export function marginOf(model: XgbModel, scaled: number[]): number {
+function marginOf(model: XgbModel, scaled: number[]): number {
   let margin = model.baseMargin;
   for (const tree of model.trees) {
     let node = 0;
@@ -54,15 +54,11 @@ export function marginOf(model: XgbModel, scaled: number[]): number {
 }
 
 /** P(this body is the speaker) for one already-standardised pair. */
-export function predictScaled(model: XgbModel, scaled: number[]): number {
+function predictScaled(model: XgbModel, scaled: number[]): number {
   return sigmoid(marginOf(model, scaled));
 }
 
 /** P(this body is the speaker) from a raw 10-feature vector. */
 export function predict(model: XgbModel, rawFeatures: number[]): number {
   return predictScaled(model, standardize(model, rawFeatures));
-}
-
-export function predictBatch(model: XgbModel, rawRows: number[][]): number[] {
-  return rawRows.map((r) => predict(model, r));
 }
