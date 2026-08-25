@@ -1,14 +1,25 @@
 {
   "_comment": [
-    "Manga109's terms of use require an author credit when pages are reproduced:",
-    "  \"courtesy of [Author's Name]\" or \"© [Author's Name]\", plus a note that the",
-    "  work was cited from the Manga109 dataset.",
+    "Manga109's terms require an author credit wherever pages are reproduced:",
+    "  \"courtesy of [Author's Name]\" or \"© [Author's Name]\", plus a note that",
+    "  the work came from the Manga109 dataset.",
     "",
-    "Map each book id (the Manga109 folder name) to its author. Author names are",
-    "listed in the Manga109 distribution and on manga109.org. scripts/export_web_assets.py",
-    "refuses to export artwork for any book missing from this file, so fill in the",
-    "books it names and re-run.",
+    "Fill in each author below, then re-run scripts/export_web_assets.py.",
+    "Author names are printed on each volume's cover page (000.jpg) and listed",
+    "on manga109.org. Blank values are treated as missing and will be rejected.",
     "",
     "Example:  \"ARMS\": \"加藤雅基\""
-  ]
+  ],
+  "TapkunNoTanteisitsu": "ふくやまけいこ",
+  "TasogareTsushin": "田中雅人",
+  "TennenSenshiG": "社佑哉",
+  "TensiNoHaneToAkumaNoShippo": "霧賀ユキ",
+  "That'sIzumiko": "大野安之",
+  "TotteokiNoABC": "愛田真夕美",
+  "TouyouKidan": "トオジョオミホ",
+  "UchiNoNyan'sDiary": "がぁさん",
+  "UltraEleven": "薮野てんや・渡辺達也",
+  "YasasiiAkuma": "花田朔生",
+  "YoumaKourin": "島崎譲・鷹司",
+  "YumeiroCooking": "くりた陸"
 }

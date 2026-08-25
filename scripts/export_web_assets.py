@@ -477,7 +477,10 @@ def main():
         per_book[c["book"]] = per_book.get(c["book"], 0) + 1
         chosen.append(c)
 
-    missing = sorted({c["book"] for c in chosen if c["book"] not in credits})
+    # A key present with an empty value is still a missing credit — checking only
+    # for key presence let a template of blank strings sail past this guard.
+    missing = sorted({c["book"] for c in chosen
+                      if not str(credits.get(c["book"], "")).strip()})
     if missing and not args.no_images and not args.allow_missing_credits:
         raise SystemExit(
             "Refusing to export artwork without author credits, which Manga109's terms require.\n"

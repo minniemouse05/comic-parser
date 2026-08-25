@@ -85,17 +85,12 @@ export default function Home() {
           heuristics fail, click a bubble to inspect the score for every candidate body, and
           drag any box to move it and watch the prediction change.
         </p>
-        <div className="note" style={{ marginTop: 20 }}>
-          <strong>This is the real model.</strong> The trees exported from the trained XGBoost
-          classifier are evaluated in your browser, and a parity test asserts they reproduce
-          scikit-learn&rsquo;s probabilities to within 1e-6. Nothing here is precomputed.
-        </div>
 
         <Demo />
 
         <div className="two-col" style={{ marginTop: 34 }}>
           <div>
-            <p className="side-h">Reading the overlay</p>
+            <h3 className="col-h">Reading the overlay</h3>
             <ul className="plain" style={{ fontSize: 14 }}>
               <li>
                 <span style={{ color: "var(--bubble)" }}>■</span> Detected text bubbles ·{" "}
@@ -113,7 +108,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <p className="side-h">Things worth trying</p>
+            <h3 className="col-h">Things worth trying</h3>
             <ul className="plain" style={{ fontSize: 14 }}>
               <li>
                 Drag a bubble across a panel boundary. <code>same_frame</code> flips and the
