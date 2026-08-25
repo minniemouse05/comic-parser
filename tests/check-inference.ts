@@ -38,7 +38,7 @@ const fixture = read<Record<string, FixtureEntry>>(join(here, "parity-fixture.js
 if (!models || !fixture) {
   console.log(
     "No exported model or fixture found — skipping.\n" +
-      "Run scripts/export_web_assets.py first (see README, 'Regenerating the demo data').",
+      "Run scripts/export_web_assets.py first (see its --help for the paths it expects).",
   );
   process.exit(0);
 }

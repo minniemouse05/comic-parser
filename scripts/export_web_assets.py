@@ -20,8 +20,8 @@ Licensing: Manga109 forbids redistributing the dataset. Its terms do permit
 publishing pages when presenting academic results, capped at 20% of any one
 volume and credited to the original author. This script enforces a hard cap of
 --max-per-book pages (default 3) per volume and refuses to run without a credit
-line for every book it exports. Read the README section "Dataset & licensing"
-before committing the output.
+line for every book it exports. See the NOTE ON DATA in LICENSE before
+committing the output.
 """
 
 from __future__ import annotations

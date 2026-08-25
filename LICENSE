@@ -26,6 +26,9 @@ NOTE ON DATA. This licence covers the code in this repository only.
 
 The Manga109 dataset and any manga page images derived from it are NOT covered
 by it. Manga109 is licensed for academic use, redistribution of the dataset is
-prohibited, and page images remain the copyright of their original authors. See
-the "Dataset & licensing" section of the README before redistributing anything
-under public/pages/.
+prohibited, and page images remain the copyright of their original authors.
+
+The pages under public/pages/ are reproduced under the term that permits
+publishing pages to present academic results: no more than 20% of any one volume
+(this repository ships at most 3 pages per volume) and each credited to its
+author. Do not redistribute them outside that context.
