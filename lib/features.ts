@@ -44,7 +44,7 @@ export const FEATURE_DOCS: Record<FeatureName, { label: string; blurb: string; g
   },
   above_bonus: {
     label: "above_bonus",
-    blurb: "1 when the bubble sits above the body — the usual layout for a speaker.",
+    blurb: "1 when the bubble sits above the body, the usual layout for a speaker.",
     group: "Relative position",
   },
   rel_x: {

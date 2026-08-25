@@ -41,13 +41,13 @@ export const METHODS: MethodSpec[] = [
     short: "frame",
     kind: "geometric",
     blurb:
-      "Nearest edge, but only among bodies inside the same panel — falling back to the whole page when the panel is empty.",
+      "Nearest edge, but only among bodies inside the same panel, falling back to the whole page when the panel is empty.",
     accuracy: 0.6333,
     condAccuracy: 0.6795,
   },
   {
     id: "xgb_nosf",
-    label: "XGBoost — no same_frame",
+    label: "XGBoost: no same_frame",
     short: "xgb-8",
     kind: "learned",
     modelKey: "xgb_nosf_nohov",
@@ -58,7 +58,7 @@ export const METHODS: MethodSpec[] = [
   },
   {
     id: "xgb_best",
-    label: "XGBoost — best model",
+    label: "XGBoost: best model",
     short: "xgb-10",
     kind: "learned",
     modelKey: "xgb_ym_v3_conf_fixed300",

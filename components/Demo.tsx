@@ -164,7 +164,7 @@ export default function Demo() {
         <p className="setup-banner">
           <strong>Placeholder pages.</strong> These are hand-built layouts, not Manga109.
           Run <code>scripts/export_web_assets.py</code> to swap in real held-out pages,
-          detections and the trained model — see the README.
+          detections and the trained model. See the README.
         </p>
       )}
       {!hasModels && (
@@ -292,14 +292,14 @@ export default function Demo() {
 
           <div>
             <p className="side-h">
-              {selectedText === null ? "Inspector" : `Bubble ${selectedText} — candidates`}
+              {selectedText === null ? "Inspector" : `Bubble ${selectedText} candidates`}
             </p>
 
             {selectedText === null ? (
               <p className="empty-side">
                 Click a <span style={{ color: "var(--bubble)" }}>bubble</span> to see every
-                candidate body scored. Drag any box to move it and watch the scores update —
-                the model runs live, in your browser.
+                candidate body scored. Drag any box to move it and watch the scores
+                update. The model runs live, in your browser.
               </p>
             ) : (
               <>
@@ -340,7 +340,7 @@ export default function Demo() {
                 >
                   {learned
                     ? "P(this body is the speaker), straight from the gradient-boosted trees."
-                    : "Inverse distance ×1000 — a ranking score, not a probability."}
+                    : "Inverse distance ×1000, a ranking score rather than a probability."}
                 </p>
               </>
             )}

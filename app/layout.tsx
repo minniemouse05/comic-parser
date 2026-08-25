@@ -3,11 +3,11 @@ import { SITE } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `${SITE.title} — ${SITE.subtitle}`,
+  title: `${SITE.title} ${SITE.subtitle}`,
   description:
     "A Detect-then-Match pipeline for manga speech bubble attribution: YOLOv8 detection plus an XGBoost classifier over candidate body–bubble pairs, with an interactive demo that runs the trained model in the browser.",
   openGraph: {
-    title: `${SITE.title} — ${SITE.subtitle}`,
+    title: `${SITE.title} ${SITE.subtitle}`,
     description:
       "65.1% attribution accuracy on 22 held-out Manga109 volumes. Explore the predictions interactively.",
     type: "article",
