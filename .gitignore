@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next.js
+.next/
+out/
+build/
+
+# misc
+.DS_Store
+*.pem
+.scratch/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# env
+.env*.local
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Manga109 page images are NOT redistributable in bulk.
+# The export script writes a small, license-compliant subset into public/pages/
+# — see README "Dataset & licensing" before committing anything here.

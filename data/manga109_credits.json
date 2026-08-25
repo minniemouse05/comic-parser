@@ -1,0 +1,14 @@
+{
+  "_comment": [
+    "Manga109's terms of use require an author credit when pages are reproduced:",
+    "  \"courtesy of [Author's Name]\" or \"© [Author's Name]\", plus a note that the",
+    "  work was cited from the Manga109 dataset.",
+    "",
+    "Map each book id (the Manga109 folder name) to its author. Author names are",
+    "listed in the Manga109 distribution and on manga109.org. scripts/export_web_assets.py",
+    "refuses to export artwork for any book missing from this file, so fill in the",
+    "books it names and re-run.",
+    "",
+    "Example:  \"ARMS\": \"加藤雅基\""
+  ]
+}

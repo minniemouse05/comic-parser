@@ -1,0 +1,720 @@
+{
+ "generated": null,
+ "source": "Hand-built placeholder layouts \u2014 not Manga109.",
+ "note": "These stand in until scripts/export_web_assets.py is run. The geometry is plausible but invented, so the geometric baselines are real while the accuracy figures on the method buttons refer to the real validation set.",
+ "pages": [
+  {
+   "id": "sample_two_hander",
+   "book": "Placeholder \u00b7 two-hander",
+   "page": 0,
+   "width": 1654,
+   "height": 1170,
+   "image": null,
+   "credit": null,
+   "synthetic": true,
+   "frames": [
+    [
+     40,
+     40,
+     810,
+     570
+    ],
+    [
+     850,
+     40,
+     1614,
+     570
+    ],
+    [
+     40,
+     610,
+     810,
+     1130
+    ],
+    [
+     850,
+     610,
+     1614,
+     1130
+    ]
+   ],
+   "bodies": [
+    {
+     "box": [
+      560,
+      180,
+      760,
+      545
+     ],
+     "conf": 0.91
+    },
+    {
+     "box": [
+      90,
+      230,
+      300,
+      545
+     ],
+     "conf": 0.88
+    },
+    {
+     "box": [
+      1370,
+      150,
+      1580,
+      545
+     ],
+     "conf": 0.93
+    },
+    {
+     "box": [
+      100,
+      760,
+      330,
+      1105
+     ],
+     "conf": 0.86
+    },
+    {
+     "box": [
+      1080,
+      700,
+      1330,
+      1105
+     ],
+     "conf": 0.9
+    }
+   ],
+   "texts": [
+    {
+     "box": [
+      110,
+      80,
+      330,
+      190
+     ],
+     "conf": 0.94
+    },
+    {
+     "box": [
+      600,
+      80,
+      780,
+      175
+     ],
+     "conf": 0.92
+    },
+    {
+     "box": [
+      900,
+      75,
+      1120,
+      195
+     ],
+     "conf": 0.9
+    },
+    {
+     "box": [
+      380,
+      660,
+      600,
+      780
+     ],
+     "conf": 0.89
+    },
+    {
+     "box": [
+      1380,
+      650,
+      1580,
+      760
+     ],
+     "conf": 0.91
+    }
+   ],
+   "gt": [
+    {
+     "text": [
+      110,
+      80,
+      330,
+      190
+     ],
+     "speaker": [
+      90,
+      230,
+      300,
+      545
+     ],
+     "textDet": 0,
+     "speakerDet": 1
+    },
+    {
+     "text": [
+      600,
+      80,
+      780,
+      175
+     ],
+     "speaker": [
+      560,
+      180,
+      760,
+      545
+     ],
+     "textDet": 1,
+     "speakerDet": 0
+    },
+    {
+     "text": [
+      900,
+      75,
+      1120,
+      195
+     ],
+     "speaker": [
+      1370,
+      150,
+      1580,
+      545
+     ],
+     "textDet": 2,
+     "speakerDet": 2
+    },
+    {
+     "text": [
+      380,
+      660,
+      600,
+      780
+     ],
+     "speaker": [
+      100,
+      760,
+      330,
+      1105
+     ],
+     "textDet": 3,
+     "speakerDet": 3
+    },
+    {
+     "text": [
+      1380,
+      650,
+      1580,
+      760
+     ],
+     "speaker": [
+      1080,
+      700,
+      1330,
+      1105
+     ],
+     "textDet": 4,
+     "speakerDet": 4
+    }
+   ],
+   "note": "Every bubble shares a panel with exactly one plausible speaker."
+  },
+  {
+   "id": "sample_crowded",
+   "book": "Placeholder \u00b7 crowded panel",
+   "page": 0,
+   "width": 1654,
+   "height": 1170,
+   "image": null,
+   "credit": null,
+   "synthetic": true,
+   "frames": [
+    [
+     40,
+     40,
+     1614,
+     700
+    ],
+    [
+     40,
+     740,
+     820,
+     1130
+    ],
+    [
+     860,
+     740,
+     1614,
+     1130
+    ]
+   ],
+   "bodies": [
+    {
+     "box": [
+      300,
+      240,
+      520,
+      690
+     ],
+     "conf": 0.89
+    },
+    {
+     "box": [
+      560,
+      200,
+      790,
+      690
+     ],
+     "conf": 0.94
+    },
+    {
+     "box": [
+      820,
+      260,
+      1030,
+      690
+     ],
+     "conf": 0.87
+    },
+    {
+     "box": [
+      1180,
+      180,
+      1420,
+      690
+     ],
+     "conf": 0.92
+    },
+    {
+     "box": [
+      180,
+      850,
+      420,
+      1125
+     ],
+     "conf": 0.85
+    }
+   ],
+   "texts": [
+    {
+     "box": [
+      340,
+      70,
+      560,
+      190
+     ],
+     "conf": 0.93
+    },
+    {
+     "box": [
+      640,
+      90,
+      880,
+      200
+     ],
+     "conf": 0.9
+    },
+    {
+     "box": [
+      1120,
+      65,
+      1360,
+      185
+     ],
+     "conf": 0.91
+    },
+    {
+     "box": [
+      520,
+      780,
+      760,
+      900
+     ],
+     "conf": 0.88
+    }
+   ],
+   "gt": [
+    {
+     "text": [
+      340,
+      70,
+      560,
+      190
+     ],
+     "speaker": [
+      300,
+      240,
+      520,
+      690
+     ],
+     "textDet": 0,
+     "speakerDet": 0
+    },
+    {
+     "text": [
+      640,
+      90,
+      880,
+      200
+     ],
+     "speaker": [
+      560,
+      200,
+      790,
+      690
+     ],
+     "textDet": 1,
+     "speakerDet": 1
+    },
+    {
+     "text": [
+      1120,
+      65,
+      1360,
+      185
+     ],
+     "speaker": [
+      1180,
+      180,
+      1420,
+      690
+     ],
+     "textDet": 2,
+     "speakerDet": 3
+    },
+    {
+     "text": [
+      520,
+      780,
+      760,
+      900
+     ],
+     "speaker": [
+      180,
+      850,
+      420,
+      1125
+     ],
+     "textDet": 3,
+     "speakerDet": 4
+    }
+   ],
+   "note": "Four bodies within one frame \u2014 same_frame cannot separate them, so proximity has to."
+  },
+  {
+   "id": "sample_gutter",
+   "book": "Placeholder \u00b7 across the gutter",
+   "page": 0,
+   "width": 1654,
+   "height": 1170,
+   "image": null,
+   "credit": null,
+   "synthetic": true,
+   "frames": [
+    [
+     40,
+     40,
+     800,
+     1130
+    ],
+    [
+     840,
+     40,
+     1614,
+     580
+    ],
+    [
+     840,
+     620,
+     1614,
+     1130
+    ]
+   ],
+   "bodies": [
+    {
+     "box": [
+      120,
+      600,
+      400,
+      1100
+     ],
+     "conf": 0.9
+    },
+    {
+     "box": [
+      845,
+      120,
+      1100,
+      560
+     ],
+     "conf": 0.88
+    },
+    {
+     "box": [
+      900,
+      700,
+      1180,
+      1105
+     ],
+     "conf": 0.91
+    }
+   ],
+   "texts": [
+    {
+     "box": [
+      660,
+      150,
+      795,
+      300
+     ],
+     "conf": 0.92
+    },
+    {
+     "box": [
+      1180,
+      90,
+      1520,
+      215
+     ],
+     "conf": 0.89
+    },
+    {
+     "box": [
+      1280,
+      660,
+      1520,
+      790
+     ],
+     "conf": 0.9
+    }
+   ],
+   "gt": [
+    {
+     "text": [
+      660,
+      150,
+      795,
+      300
+     ],
+     "speaker": [
+      120,
+      600,
+      400,
+      1100
+     ],
+     "textDet": 0,
+     "speakerDet": 0
+    },
+    {
+     "text": [
+      1180,
+      90,
+      1520,
+      215
+     ],
+     "speaker": [
+      845,
+      120,
+      1100,
+      560
+     ],
+     "textDet": 1,
+     "speakerDet": 1
+    },
+    {
+     "text": [
+      1280,
+      660,
+      1520,
+      790
+     ],
+     "speaker": [
+      900,
+      700,
+      1180,
+      1105
+     ],
+     "textDet": 2,
+     "speakerDet": 2
+    }
+   ],
+   "note": "Bubble 0 is closer to body 1 in pixels, but shares a panel with body 0. Nearest-edge gets it wrong; frame-aware does not."
+  },
+  {
+   "id": "sample_tall",
+   "book": "Placeholder \u00b7 tall panel",
+   "page": 0,
+   "width": 1654,
+   "height": 1170,
+   "image": null,
+   "credit": null,
+   "synthetic": true,
+   "frames": [
+    [
+     40,
+     40,
+     540,
+     1130
+    ],
+    [
+     580,
+     40,
+     1614,
+     420
+    ],
+    [
+     580,
+     460,
+     1090,
+     1130
+    ],
+    [
+     1130,
+     460,
+     1614,
+     1130
+    ]
+   ],
+   "bodies": [
+    {
+     "box": [
+      150,
+      600,
+      470,
+      1105
+     ],
+     "conf": 0.93
+    },
+    {
+     "box": [
+      700,
+      110,
+      940,
+      400
+     ],
+     "conf": 0.84
+    },
+    {
+     "box": [
+      660,
+      700,
+      1020,
+      1120
+     ],
+     "conf": 0.9
+    },
+    {
+     "box": [
+      1220,
+      620,
+      1530,
+      1120
+     ],
+     "conf": 0.88
+    }
+   ],
+   "texts": [
+    {
+     "box": [
+      90,
+      120,
+      420,
+      260
+     ],
+     "conf": 0.91
+    },
+    {
+     "box": [
+      1180,
+      90,
+      1520,
+      215
+     ],
+     "conf": 0.87
+    },
+    {
+     "box": [
+      640,
+      510,
+      940,
+      630
+     ],
+     "conf": 0.92
+    },
+    {
+     "box": [
+      1180,
+      490,
+      1520,
+      600
+     ],
+     "conf": 0.89
+    }
+   ],
+   "gt": [
+    {
+     "text": [
+      90,
+      120,
+      420,
+      260
+     ],
+     "speaker": [
+      150,
+      600,
+      470,
+      1105
+     ],
+     "textDet": 0,
+     "speakerDet": 0
+    },
+    {
+     "text": [
+      1180,
+      90,
+      1520,
+      215
+     ],
+     "speaker": [
+      700,
+      110,
+      940,
+      400
+     ],
+     "textDet": 1,
+     "speakerDet": 1
+    },
+    {
+     "text": [
+      640,
+      510,
+      940,
+      630
+     ],
+     "speaker": [
+      660,
+      700,
+      1020,
+      1120
+     ],
+     "textDet": 2,
+     "speakerDet": 2
+    },
+    {
+     "text": [
+      1180,
+      490,
+      1520,
+      600
+     ],
+     "speaker": [
+      1220,
+      620,
+      1530,
+      1120
+     ],
+     "textDet": 3,
+     "speakerDet": 3
+    }
+   ],
+   "note": "A tall establishing panel plus a three-panel tier."
+  }
+ ]
+}
